@@ -14,20 +14,12 @@ public class Player : MonoBehaviour
     [SerializeField] float positionX = 3.5f;
     [SerializeField] RoadLine roadLine;
 
-    Vector3 moveVec;
-
-    float dirX;
-    //float dirZ;
-
-    //bool isRight;
-    bool rDown;
+    [SerializeField] ObjectSound objectSound = new ObjectSound();
 
     private void Awake()
     {
-       
 
     }
-
     void Start()
     {
         roadLine = RoadLine.MIDDLE;
@@ -42,24 +34,13 @@ public class Player : MonoBehaviour
         Status();
     }
 
-
     public void Move()
     {
-        //dirX = 
-
-
-
-        //moveVec = transform.position;
-
-        //if()
-        //moveVec.x *= 3.5f; 
-
-        //transform.position = moveVec;
-
 
         // 왼쪽 방향키
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            AudioManager.instance.sound(objectSound.audioClip[0]);
 
             if(roadLine <= RoadLine.LEFT)
             {
@@ -73,6 +54,7 @@ public class Player : MonoBehaviour
         // 오른쪽 방향키
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            AudioManager.instance.sound(objectSound.audioClip[0]);
 
             if (roadLine == RoadLine.RIGHT)
             {
