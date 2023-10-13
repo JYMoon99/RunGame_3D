@@ -350,6 +350,8 @@
 "Assets/Script/Mine/Player2.cs"
 "Assets/Script/ObjectSound.cs"
 "Assets/Script/Player.cs"
+"Assets/Script/RoadManager.cs"
+"Assets/Script/RoadMoving.cs"
 "Assets/Script/Singleton.cs"
 -langversion:9.0
 

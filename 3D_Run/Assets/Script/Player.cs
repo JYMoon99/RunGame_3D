@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     {
 
         // 왼쪽 방향키
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             AudioManager.instance.sound(objectSound.audioClip[0]);
 
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         }
 
         // 오른쪽 방향키
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             AudioManager.instance.sound(objectSound.audioClip[0]);
 
@@ -83,5 +83,5 @@ public class Player : MonoBehaviour
                 
         }
     }
-
+    
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-
+    Rigidbody rb;
 
     void Start()
     {
@@ -18,9 +18,17 @@ public class Car : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Player player = other.GetComponent<Player>();
-        
+        if (other.gameObject.tag == "Player")
+        {
+            Vector3 carPos = new Vector3(0, 3, 15);
 
+            rb = gameObject.GetComponent<Rigidbody>();
+
+            rb.AddForce(carPos * 2f , ForceMode.Impulse);
+            rb.AddTorque(Vector3.up * 15, ForceMode.Impulse);
+
+            Destroy(gameObject, 5f);
+        }
 
     }
 }

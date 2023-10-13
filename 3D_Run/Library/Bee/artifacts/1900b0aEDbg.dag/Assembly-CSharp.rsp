@@ -345,7 +345,14 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Script/AudioManager.cs"
+"Assets/Script/Car.cs"
+"Assets/Script/Mine/Player2.cs"
+"Assets/Script/ObjectSound.cs"
 "Assets/Script/Player.cs"
+"Assets/Script/RoadManager.cs"
+"Assets/Script/RoadMoving.cs"
+"Assets/Script/Singleton.cs"
 -langversion:9.0
 
 /deterministic
